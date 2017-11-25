@@ -4,16 +4,11 @@ import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
-import android.support.v4.app.DialogFragment;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.DatePicker;
-import android.widget.Spinner;
 import android.widget.TextView;
-
 import com.strudelauxpommes.fitnesshabits.R;
-
 import java.util.Calendar;
 
 public class ParameterActivity extends AppCompatActivity
