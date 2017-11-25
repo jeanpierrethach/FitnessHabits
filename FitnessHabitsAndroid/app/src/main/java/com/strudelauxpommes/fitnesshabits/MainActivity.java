@@ -1,5 +1,6 @@
 package com.strudelauxpommes.fitnesshabits;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.strudelauxpommes.fitnesshabits.parameters.ParameterActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         if (item.getItemId() == R.id.param) {
+
             startActivity(new Intent(this, ParameterActivity.class));
         }
         return super.onOptionsItemSelected(item);
