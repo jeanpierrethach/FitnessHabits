@@ -11,10 +11,14 @@ import com.strudelauxpommes.fitnesshabits.R;
 
 public class ProfileFragment extends Fragment {
 
-    public ProfileFragment() {
+    public static final String TITLE = "Profile";
 
+    public static ProfileFragment newInstance() {
+
+        return new ProfileFragment();
     }
 
+    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_profile, container, false);
