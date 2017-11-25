@@ -1,10 +1,13 @@
 package com.strudelauxpommes.fitnesshabits;
 
 import android.app.DialogFragment;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.strudelauxpommes.fitnesshabits.parameters.ParameterActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -28,5 +31,13 @@ public class MainActivity extends AppCompatActivity {
         if (mi.getItemId() == R.id.datepicker) {
 
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == R.id.param){
+            startActivity(new Intent(this, ParameterActivity.class));
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
