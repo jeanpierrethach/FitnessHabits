@@ -12,4 +12,15 @@
     <string name="women">Women</string>
     <string name="men">Men</string>
     <string name="other">Other</string>
+    <string name="measurement_unit_labels">Measurements Units</string>
+    <string name="measurement_unit_weight">Weight</string>
+    <string name="measurement_unit_height">Height</string>
+    <string name="measurement_unit_drinks">Drinks details</string>
+    <string name="measurement_unit_beverage_total">Beverage total</string>
+    <string name="measurement_unit_beverage_detail">Beverage details</string>
+    <string-array name="unit_system">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+
 </resources>
