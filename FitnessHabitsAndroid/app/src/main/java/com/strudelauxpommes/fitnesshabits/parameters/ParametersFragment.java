@@ -15,10 +15,14 @@ import com.strudelauxpommes.fitnesshabits.R;
  */
 public class ParametersFragment extends Fragment {
 
-    public ParametersFragment() {
+    public static final String TITLE = "Preferences";
 
+    public static ParametersFragment newInstance() {
+
+        return new ParametersFragment();
     }
 
+    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_parameters, container, false);
