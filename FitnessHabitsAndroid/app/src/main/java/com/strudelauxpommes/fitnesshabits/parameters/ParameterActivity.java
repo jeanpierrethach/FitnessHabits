@@ -24,7 +24,7 @@ public class ParameterActivity extends AppCompatActivity {
     private void setUpViewPager() {
         ViewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         ViewPager = (ViewPager) findViewById(R.id.pager);
-       // ViewPager.setAdapter(ViewPagerAdapter);
+        ViewPager.setAdapter(ViewPagerAdapter);
 
         mTabLayout = (TabLayout) findViewById(R.id.tabLayout);
         mTabLayout.setupWithViewPager(ViewPager);
