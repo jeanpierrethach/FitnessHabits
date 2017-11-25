@@ -17,7 +17,7 @@ public class ParameterActivity extends AppCompatActivity
     private TabLayout mTabLayout;
     private ViewPagerAdapter ViewPagerAdapter;
     private ViewPager ViewPager;
-
+    private ParameterViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,11 @@ public class ParameterActivity extends AppCompatActivity
         setContentView(R.layout.activity_parameter);
 
         setUpViewPager();
+
+
+        Spinner heightSpinner = findViewById(R.id.heightSpinner);
+
+
     }
 
     private void setUpViewPager() {
