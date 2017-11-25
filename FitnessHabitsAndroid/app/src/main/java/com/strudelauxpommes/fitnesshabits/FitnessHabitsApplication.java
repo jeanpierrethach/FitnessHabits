@@ -6,22 +6,26 @@ import android.support.annotation.MainThread;
 
 import com.strudelauxpommes.fitnesshabits.data.AppDatabase;
 import com.strudelauxpommes.fitnesshabits.data.repository.AlcoolRepository;
+import com.strudelauxpommes.fitnesshabits.data.repository.ParamRepository;
 import com.strudelauxpommes.fitnesshabits.data.repository.PhysicalRepository;
+import com.strudelauxpommes.fitnesshabits.data.util.CalendarDate;
 
 /**
  * Created by thomas on 2017-11-25.
  */
 
 public class FitnessHabitsApplication extends Application {
-    public static Application application;
+    public static FitnessHabitsApplication application;
     private AppDatabase database;
     private PhysicalRepository physicalRepository;
     private AlcoolRepository alcoolRepository;
+    private ParamRepository paramRepository;
 
     @Override
     public void onCreate() {
         super.onCreate();
         FitnessHabitsApplication.application = this;
+        getParamRepository().param().currentViewDate().setValue(CalendarDate.now());
     }
 
     @MainThread
@@ -48,4 +52,16 @@ public class FitnessHabitsApplication extends Application {
         }
         return alcoolRepository;
     }
+
+    @MainThread
+    public ParamRepository getParamRepository() {
+        if (paramRepository == null) {
+            paramRepository = new ParamRepository(getDatabase().paramRecordDao());
+        }
+        return paramRepository;
+    }
+
+
+
+
 }
