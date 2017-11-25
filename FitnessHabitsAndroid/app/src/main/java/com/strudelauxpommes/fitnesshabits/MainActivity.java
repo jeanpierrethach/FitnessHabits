@@ -72,9 +72,6 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
             }
         } else if (item.getItemId() == R.id.param) {
             startActivity(new Intent(this, ParameterActivity.class));
-            return true;
-        } else if (item.getItemId() == R.id.param) {
-            startActivity(new Intent(this, ParameterActivity.class));
         } else if (item.getItemId() == R.id.objectif) {
             // activité temporaire, pour expérimenter. à enlever seulement à la fin de la journée
             Intent intent = new Intent(this, TestActivity.class);
@@ -84,13 +81,4 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
         return super.onOptionsItemSelected(item);
     }
 
-    /*@Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
-        if (item.getItemId() == R.id.param) {
-
-            startActivity(new Intent(this, ParameterActivity.class));
-        }
-        return super.onOptionsItemSelected(item);
-    }*/
 }
