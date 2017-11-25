@@ -5,5 +5,12 @@
     <string name="objectif">Objectif</string>
     <string name="parameters_title_tab">Preferences</string>
     <string name="profile_title_tab">Profile</string>
-    <string name="username_input">Your name</string>
+    <string name="username_input">User name</string>
+    <string name="txt_birthday">Birthday</string>
+    <string name="txt_sex">Sex</string>
+    <string name="txt_height">Taille</string>
+    <string name="women">Women</string>
+    <string name="men">Men</string>
+    <string name="other">Other</string>
+
 </resources>

@@ -1,6 +1,5 @@
 package com.strudelauxpommes.fitnesshabits;
 
-import android.app.DialogFragment;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +10,10 @@ import com.strudelauxpommes.fitnesshabits.parameters.ParameterActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import com.strudelauxpommes.fitnesshabits.parameters.ProfileFragment;
+
+import java.util.MissingFormatArgumentException;
 
 public class MainActivity extends AppCompatActivity {
 
